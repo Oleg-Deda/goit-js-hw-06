@@ -8,18 +8,17 @@ const decrementButtonEl = document.querySelector(
   'button[data-action="decrement"]'
 );
 const valueEl = document.querySelector('#value');
-const incrementButtonEl = document.querySelector('button[data-action="increment"]');
+const incrementButtonEl = document.querySelector(
+  'button[data-action="increment"]'
+);
 const decreaseValue = () => {
- counterValue -= 1;
+  counterValue -= 1;
   valueEl.textContent = counterValue;
-}
-// decrementButtonEl.addEventListener('click', () => {
-const increaseValue = () => {
- counterValue += 1;
-  valueEl.textContent = counterValue;
-}
+};
 
-// incrementButtonEl.addEventListener('click', () => {
+const increaseValue = () => {
   counterValue += 1;
   valueEl.textContent = counterValue;
-});
+};
+decrementButtonEl.addEventListener('click', decreaseValue);
+incrementButtonEl.addEventListener('click', increaseValue);

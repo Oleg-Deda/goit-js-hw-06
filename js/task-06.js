@@ -1,7 +1,7 @@
 const validatedInputRef = document.querySelector('#validation-input');
 
 const validatedInputBySymbols = () => {
-  if (validatedInputRef.value.length < validatedInputRef.dataset.length) {
+  if (validatedInputRef.value.length != validatedInputRef.dataset.length) {
     validatedInputRef.classList.remove('valid');
     validatedInputRef.classList.add('invalid');
   } else {
