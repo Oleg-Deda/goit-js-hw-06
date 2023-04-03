@@ -23,4 +23,5 @@ for (const ingredient of ingredients) {
   ingredientsItemsEl.push(itemEl);
 }
 
+
 ingredientsListEl.append(...ingredientsItemsEl);

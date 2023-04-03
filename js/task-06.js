@@ -9,4 +9,5 @@ const validatedInputBySymbols = () => {
     validatedInputRef.classList.add('valid');
   }
 };
+
 validatedInputRef.addEventListener('blur', validatedInputBySymbols);

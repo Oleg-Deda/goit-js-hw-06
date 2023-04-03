@@ -20,5 +20,6 @@ const increaseValue = () => {
   counterValue += 1;
   valueEl.textContent = counterValue;
 };
+
 decrementButtonEl.addEventListener('click', decreaseValue);
 incrementButtonEl.addEventListener('click', increaseValue);

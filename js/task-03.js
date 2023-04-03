@@ -26,5 +26,4 @@ for (const image of images) {
 }
 
 const markup = imageElArray.map((img) => `<li>${img}</li>`).join('');
-
 galleryEl.insertAdjacentHTML('afterbegin', markup);
